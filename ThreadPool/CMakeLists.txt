@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION	3.0)
+project(ThreadPool)
+set(HOME /home/cdz/Desktop/ThreadPool)
+set(EXECUTABLE_OUTPUT_PATH ${HOME}/bin)
+file(GLOB SRC_LIST ${HOME}/src/*.c)
+include_directories(${HOME}/include)
+add_executable(threadpool ${SRC_LIST})
+target_link_libraries(threadpool pthread)
