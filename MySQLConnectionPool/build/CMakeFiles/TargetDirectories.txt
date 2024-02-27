@@ -1,0 +1,3 @@
+/home/cdz/MySQLConnectionPool/build/CMakeFiles/mysqlConnectionPool.dir
+/home/cdz/MySQLConnectionPool/build/CMakeFiles/edit_cache.dir
+/home/cdz/MySQLConnectionPool/build/CMakeFiles/rebuild_cache.dir
