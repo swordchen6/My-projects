@@ -162,9 +162,11 @@ MemBlock* mem_malloc(MemPool* pool,int num)
 #if EBABLE_THREAD_SAFE
 			pthread_mutex_lock(&pool->pool_mutex);
 			pool->pages[i]->blocks = p->next_block;
-			pthread_mutex_unlock(&pool->pool_mutex);
+			pool->pages[i]->unused-=num;
+            pthread_mutex_unlock(&pool->pool_mutex);
 #else
 			pool->pages[i]->blocks = p->next_block;
+			pool->pages[i]->unused-=num;
 #endif
 			p->next_block = NULL;
 			return q;
@@ -185,9 +187,11 @@ void mem_free(MemPool* pool,MemBlock* head, int num)
 	pthread_mutex_lock(&pool->pool_mutex);
 	p->next_block = pool->pages[p->page_id]->blocks;
 	pool->pages[p->page_id]->blocks = head;
-	pthread_mutex_unlock(&pool->pool_mutex);
+	pool->pages[p->page_id]->unused+=num;
+    pthread_mutex_unlock(&pool->pool_mutex);
 #else
 	p->next_block = pool->pages[p->page_id]->blocks;
+	pool->pages[p->page_id]->blocks = head;
 	pool->pages[p->page_id]->blocks = head;
 #endif
 	return;
