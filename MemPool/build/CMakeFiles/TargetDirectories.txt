@@ -1,0 +1,3 @@
+/home/cdz/MemPool/build/CMakeFiles/mempool.dir
+/home/cdz/MemPool/build/CMakeFiles/edit_cache.dir
+/home/cdz/MemPool/build/CMakeFiles/rebuild_cache.dir

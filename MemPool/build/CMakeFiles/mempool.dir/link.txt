@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/mempool.dir/src/MemPool.c.o CMakeFiles/mempool.dir/src/main.c.o -o ../bin/mempool 
