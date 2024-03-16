@@ -1,0 +1,15 @@
+【有道云笔记】C和C++
+https://note.youdao.com/s/2ZdzaStt
+【有道云笔记】GIT分布式管理
+https://note.youdao.com/s/Ausg7OPw
+【有道云笔记】Linux
+https://note.youdao.com/s/Ax1obFbV
+【有道云笔记】cmake
+https://note.youdao.com/s/craOVBNY
+【有道云笔记】设计模式
+https://note.youdao.com/s/byUfixYj
+【有道云笔记】shell编程
+https://note.youdao.com/s/MUnbxs05
+【有道云笔记】数据库
+https://note.youdao.com/s/2GrIyU3m
+
